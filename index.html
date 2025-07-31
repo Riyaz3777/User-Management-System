@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello GitHub Pages</title>
+  <title>Music Library</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello, GitHub Pages!</h1>
-  <button onclick="sayHello()">Click Me</button>
+  <div class="container">
+    <h1>🎵 My Music Library</h1>
+    <ul id="music-list"></ul>
+    <div id="player">
+      <p id="now-playing">Select a song to play</p>
+      <audio id="audio" controls></audio>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
