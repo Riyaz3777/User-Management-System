@@ -3,7 +3,7 @@ const songs = [
   {
     title: "Song 1",
     artist: "Artist A",
-    file: "music/song1.mp3"
+    file: "https://gaana.com/song/ellorukkum-oru-1.mp3"
   },
   {
     title: "Song 2",
