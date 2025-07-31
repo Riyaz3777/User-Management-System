@@ -3,7 +3,7 @@ const songs = [
   {
     title: "Song 1",
     artist: "Artist A",
-    file: "https://gaana.com/song/ellorukkum-oru-1.mp3"
+    file:"https://s3.sangeethe.com/play/thottu-thottu-pesum.mp3"
   },
   {
     title: "Song 2",
