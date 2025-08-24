@@ -9,7 +9,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: "*" // <-- allow all origins
+  origin: "*" // <-- allow all origins including local files (null)
 }));
 
 // Connect to MongoDB
@@ -20,3 +20,4 @@ app.use("/api/auth", authRoutes);
 
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+i
