@@ -1,14 +1,16 @@
 const express = require("express");
 const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
-const cors = require("cors"); // <--- CORS module
-
+const cors = require("cors"); // CORS module
 require("dotenv").config();
+
 const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors()); // <--- allow all origins
+app.use(cors({
+  origin: "*" // <-- allow all origins
+}));
 
 // Connect to MongoDB
 connectDB();
