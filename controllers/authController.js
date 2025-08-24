@@ -1,4 +1,4 @@
-const User = require("../models/User");
+const User = require("../models/Users");
 const jwt = require("jsonwebtoken");
 
 // Generate JWT token
@@ -62,3 +62,4 @@ const getUserProfile = async (req, res) => {
 };
 
 module.exports = { registerUser, loginUser, getUserProfile };
+
